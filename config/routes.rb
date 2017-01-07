@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/show'
+
   get 'welcome/index'
 
   get 'welcome/about'
@@ -7,11 +9,12 @@ Rails.application.routes.draw do
 
   devise_scope :user do
     authenticated :user do
-      # will be home page
-      root 'welcome#index', as: :authenticated_root
+      # go to user show page upon sign in
+      root 'users#show', as: :authenticated_root
     end
 
     unauthenticated do
+      # login page if not signed in
       root 'devise/sessions#new', as: :unauthenticated_root
     end
   end
