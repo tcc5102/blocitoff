@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
     unauthenticated do
       # login page if not signed in
-      root 'devise/sessions#new', as: :unauthenticated_root
+      root 'devise/registrations#new', as: :unauthenticated_root
     end
   end
 
