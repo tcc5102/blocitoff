@@ -14,3 +14,53 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ body {
+   font-family: Verdana;
+   background-color: #c0deed;
+   margin: 0;
+
+ }
+
+ h3 {
+   text-align: center;
+ }
+
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 5px 5px 5px 5px;
+     overflow: hidden;
+     background-color: #c0deed;
+     border-bottom: thick solid #00aced;
+     max-height: 88px;
+ }
+
+ p {
+
+ }
+
+ li {
+     text-align: center;
+ }
+
+ .list {
+   width: auto;
+   display: block;
+   text-align: center;
+   border: 3px solid #00aced;
+   vertical-align: middle;
+}
+
+ .form {
+   margin-left: 10px;
+   margin-bottom: 10px;
+ }
+
+ .field {
+   border: 1px solid #00aced;
+ }
+
+ .edit_field {
+
+ }
