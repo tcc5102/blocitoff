@@ -1,21 +1,22 @@
-<div class='list'>
-  <h4 class='list-group-item-heading'><%= item.name %></h4>
-  <p class='list-group-item-text'><%= days_left(item) %></p>
+<!-- <div class='list'>
+  <h4 class='list-group-item-heading'><%= item.name %>
+  <%= days_left(item) %>
   <button type="button" class="btn btn-default">
-    <%= link_to "Delete #{item.name}", user_item_path(@user.id, item), method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %>
+    <%= link_to "Delete", user_item_path(@user.id, item), method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %>
   </button>
-</div>
+  </h4>
+</div> -->
 
-<!-- <table>
+<table>
   <tr>
-    <th>Task</th>
-    <th>Created At</th>
-    <th>Complete</th>
+    <!-- <th>Task</th>
+    <th>Created</th>
+    <th>Complete</th> -->
   <tr>
     <td><%= item.name %></td>
     <td><%= days_left(item) %></td>
     <td><button type="button" class="btn btn-default">
-      <%= link_to "Delete #{item.name}", user_item_path(@user.id, item), method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %>
+      <%= link_to "Complete", user_item_path(@user.id, item), method: :delete, remote: true, class: 'glyphicon glyphicon-ok' %>
     </button></td>
   </tr>
-</table> -->
+</table>
